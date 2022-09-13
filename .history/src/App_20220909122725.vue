@@ -1,0 +1,37 @@
+<script setup>
+  import { Authenticator } from '@aws-amplify/ui-vue';
+  import '@aws-amplify/ui-vue/styles.css';
+</script>
+<script setup lang="ts">
+  import { Amplify, Auth } from 'aws-amplify';
+  import '@aws-amplify/ui-vue/styles.css';
+  import aws_exports from './aws-exports';
+  Amplify.configure(aws_exports);
+
+  const services = {
+    async handleSignUp(formData) {
+      let { username, password, attributes } = formData;
+      // custom username
+      username = username.toLowerCase();
+      attributes.email = attributes.email.toLowerCase();
+      return Auth.signUp({
+        username,
+        password,
+        attributes,
+      });
+    },
+  };
+</script>
+<template>
+  <authenticator>
+    <template v-slot="{ user, signOut }">
+      <h1>Hello {{ user.username }}!</h1>
+      {{user.signIn}}
+      {{user.code}}
+
+      <button @click="signOut">Sign Out</button>
+    </template>
+    
+   
+  </authenticator>
+</template>

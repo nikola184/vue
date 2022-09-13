@@ -1,0 +1,31 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-spothopper1-dev-151505-authRole",
+      "UnauthRoleArn": "arn:aws:iam::057373359136:role/amplify-spothopper1-dev-151505-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::057373359136:role/amplify-spothopper1-dev-151505-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-spothopper1-dev-151505-deployment",
+      "UnauthRoleName": "amplify-spothopper1-dev-151505-unauthRole",
+      "StackName": "amplify-spothopper1-dev-151505",
+      "StackId": "arn:aws:cloudformation:us-east-1:057373359136:stack/amplify-spothopper1-dev-151505/428ecff0-2f78-11ed-8810-12feadf7ae3d",
+      "AmplifyAppId": "d30tp7xvcs5lnm"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d30tp7xvcs5lnm",
+          "type": "manual"
+        }
+      },
+      "auth": {
+        "spothopper16d10401d": {
+          "userPoolId": "us-east-1_NuXy1csoQ",
+          "userPoolName": "sh-users-dev",
+          "webClientId": "5m9hvl26clos8rq176v04vhisi",
+          "nativeClientId": "120uqiokg7ao7ri87r2cpfc2e8"
+        }
+      }
+    }
+  }
+}
